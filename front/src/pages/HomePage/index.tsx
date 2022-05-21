@@ -11,24 +11,24 @@ const HomePage: React.FC = () => {
   return (
     <Grid component="main"
       sx={{
-        width: '100vw',
+        width: 'auto',
         height: 'auto',
-        position: 'fixed',
         display: 'flex',
         flexDirection: 'row',
-        my: '64px',
+        mt: '64px',
         justifyContent: 'space-around',
       }} >
-      <Box component="img"
-        mt='64px'
-        mx= '64px'
-        src={Logo}
-        alt='Vector Up'
-        width='auto'
-        height='255px'
-      />
+      <Box component='h1'>
+        <Box component="img"
+          pt='64px'
+          px='64px'
+          src={Logo}
+          alt='Vector Up'
+          width='100%'
+        />
+      </Box>
       <Box sx={{
-        width: "100%",
+        width: "auto",
         height: "calc(100vh - 112px)",
         flexDirection: "column",
         overflowY: "scroll"

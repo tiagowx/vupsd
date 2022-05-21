@@ -18,7 +18,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/' element={<Dashboard />} />
         </Routes>
-        <Footer />
+        <Footer appName='Vector Up' />
       </BrowserRouter>
 
     </ThemeProvider>

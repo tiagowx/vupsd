@@ -1,0 +1,234 @@
+@font-face{
+    font-family: 'Poiret One', cursive;
+    src: url('css/fonts/PoiretOne-Regular.tff')
+}
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+body{
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Poiret One', cursive;
+}
+
+.h-10{
+    height: 10%;
+}
+.h-80{
+    height: 80%;
+}
+
+.bg-custom{
+    background-color: #6dc8b9;
+    color: #fefefe;
+}
+.btn-custom{
+    background: #6dc8b9;
+}
+
+.btn-vectorup {
+    color: #fff;
+    background-color: #6dc8b9;
+    border-color: #6dc8b9;
+}
+  
+.btn-vectorup:hover {
+    color: #fff;
+    background-color: #006e61;
+    border-color: #006e61;
+}
+
+.btn-vectorup:focus, .btn-vectorup.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-vectorup.disabled, .btn-vectorup:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-vectorup:not(:disabled):not(.disabled):active, .btn-vectorup:not(:disabled):not(.disabled).active,
+.show > .btn-vectorup.dropdown-toggle {
+    color: #fff;
+    background-color: #006e61;
+    border-color: #005cbf;
+}
+
+.btn-vectorup:not(:disabled):not(.disabled):active:focus, .btn-vectorup:not(:disabled):not(.disabled).active:focus,
+.show > .btn-vectorup.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143,  255, 0.5);
+}
+
+.col-25{
+    width: 22%;
+  
+}
+
+
+.nav-custom{
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgba(109, 200, 185, 0.3);
+
+    color: #006e61;
+}
+
+.maillink {
+    color: #006e61;
+    text-decoration: underline;
+}.maillink:hover{
+    text-decoration: none;
+    color: #006e61;
+}
+
+p {
+    font-family: 'Open Sans', 'Poiret One';
+    font-family: 'Poiret One', cursive;
+}
+
+/*---     ---*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+.vOrbit{
+    animation-name: orbitar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 300px 330px;
+    box-shadow: 0px 0px 25px 10px #fff;
+} @keyframes orbitar{
+    from {
+        transform: rotate(0eg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.vPulse{
+    animation-name: pulse;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+
+} @keyframes pulse{
+    50% {
+        transform: scale(1.05)translate(-2.5%,-2.5%)
+    }
+}
+
+.vGrow{
+    animation-name: grow;
+    animation-duration: 3s;
+} @keyframes grow{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+}
+.vGrowLite{
+    animation-name: growLite;
+    animation-duration: 3s;
+    transform: scale(1.1)translate(-5%,-5%);
+} @keyframes growLite{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.1)translate(-5%,-5%);
+    }
+}
+
+.vDecrease{
+    animation-name: decrease;
+    animation-duration: 3s;
+} @keyframes decrease{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(0);
+    }
+}
+.vDecreaseLite{
+    animation-name:decreaseLite;
+    animation-duration: 3s;
+} @keyframes decreaseLite{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(0.9)translate(5%,5%);
+    }
+}
+
+.vFadeToRight{
+    animation-name: fadeToRight;
+    animation-duration: 1s;
+}@keyframes fadeToRight{
+    0%{
+        transform: translate(-100%);
+    }80%{
+        transform: translate(5%);
+    }
+}
+
+.vFadeToLeft{
+    animation-name: fadeToLeft;
+    animation-duration: 3s;
+}@keyframes fadeToLeft{
+    0%{
+        transform: translate(100%);
+    }80%{
+        transform: translate(-5%)scale(1.3,0);
+    }
+}
+
+.vRise{
+    animation-name: rise;
+    animation-duration: 1s;
+}@keyframes rise{
+    0%{
+       transform: translateY(100%) scaleY(1.5);
+    }
+}
+
+.vLower{
+    animation-name: lower;
+    animation-duration: 1s;
+}@keyframes lower{
+    0%{
+       transform: translateY(-100%) scaleY(-1.5);
+    }
+}
+
+.vDraw{
+    stroke: #006E61;
+    stroke-width: 0%;
+    animation: 3s draw forwards;
+  }@keyframes draw{
+    0%{
+    }100%{
+        stroke-dashoffset: 0;
+    }
+}
+.vAppear{
+    animation-name: appear;
+    animation-duration: 1s;
+}@keyframes appear{
+    from{
+        fill-opacity: 0%;
+    }
+}
+
+.vChangeColor{
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    fill:#006E61;
+}   @keyframes changeColor{
+    20%{
+        fill:#006E61;
+    }
+    40%{
+        fill:#d3eeea;
+    }
+    80%{
+        fill:#d3eeea;
+    }
+}
